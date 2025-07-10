@@ -15,7 +15,245 @@
 </head>
 
 <body>
+    <div class="portfolio">
+        <!-- Header Glassmorphism -->
+        <header class="portfolio__header">
+            <div class="header__content">
+                <div class="header__logo">JP</div>
 
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li><a href="#about" class="navigation__link">Sobre mí</a></li>
+                        <li><a href="#projects" class="navigation__link">Proyectos</a></li>
+                        <li><a href="#contact" class="navigation__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Hero Glassmorphism -->
+        <section class="portfolio__hero">
+            <div class="hero__content">
+                <div class="hero__image-container">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23a855f7;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='90' cy='90' r='80' fill='url(%23grad)'/%3E%3Ctext x='90' y='100' text-anchor='middle' font-size='50' fill='white' font-weight='bold'%3EJP%3C/text%3E%3C/svg%3E"
+                        alt="Foto de perfil" class="hero__image">
+                </div>
+                <div class="hero__text">
+                    <h1 class="hero__title">Juan Pérez</h1>
+                    <p class="hero__subtitle">Desarrollador Full Stack</p>
+                    <p class="hero__description">
+                        Creando experiencias digitales extraordinarias con tecnologías de vanguardia.
+                        Especializado en React, Node.js y arquitecturas modernas que transforman ideas en realidad.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- About Section Glassmorphism -->
+        <section class="portfolio__about" id="about">
+            <h2 class="about__title">Sobre mí</h2>
+            <p class="about__text">
+                Desarrollador full stack apasionado por la innovación tecnológica. Con más de 3 años
+                construyendo aplicaciones web que combinan funcionalidad excepcional con diseño
+                impecable.
+            </p>
+            <p class="about__text">
+                Mi enfoque se centra en crear soluciones escalables utilizando las mejores prácticas
+                de la industria, desde arquitecturas en la nube hasta interfaces de usuario intuitivas.
+            </p>
+
+            <div class="skills">
+                <h3 class="skills__title">Stack Tecnológico</h3>
+                <div class="skills__grid">
+                    <span class="skill__tag skill__tag--react">React</span>
+                    <span class="skill__tag skill__tag--typescript">TypeScript</span>
+                    <span class="skill__tag skill__tag--nodejs">Node.js</span>
+                    <span class="skill__tag skill__tag--nextjs">Next.js</span>
+                    <span class="skill__tag skill__tag--postgresql">PostgreSQL</span>
+                    <span class="skill__tag skill__tag--mongodb">MongoDB</span>
+                    <span class="skill__tag skill__tag--aws">AWS</span>
+                    <span class="skill__tag skill__tag--docker">Docker</span>
+                    <span class="skill__tag skill__tag--graphql">GraphQL</span>
+                    <span class="skill__tag skill__tag--css-grid">CSS Grid</span>
+                    <span class="skill__tag skill__tag--tailwind">Tailwind</span>
+                    <span class="skill__tag skill__tag--git">Git</span>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section Glassmorphism -->
+        <section class="portfolio__projects" id="projects">
+            <h2 class="projects__title">Proyectos Destacados</h2>
+
+            <div class="projects__grid">
+
+                <!-- Proyecto Destacado 1 -->
+                <article class="project__card project__card--featured">
+                    <div class="project__image">🚀 SaaS Platform</div>
+                    <div class="project__content">
+                        <h3 class="project__title">Plataforma SaaS Completa</h3>
+                        <p class="project__description">
+                            Plataforma de gestión empresarial con autenticación avanzada, dashboard
+                            analítico, sistema de pagos y arquitectura escalable. Maneja +10k usuarios
+                            simultáneos con optimización de performance.
+                        </p>
+                        <div class="project__tech">
+                            <span class="tech__tag">Next.js</span>
+                            <span class="tech__tag">TypeScript</span>
+                            <span class="tech__tag">PostgreSQL</span>
+                            <span class="tech__tag">AWS</span>
+                            <span class="tech__tag">Stripe</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link project__link--primary">Ver Demo</a>
+                            <a href="#" class="project__link project__link--secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project__card">
+                    <div class="project__image">🎨 Design System</div>
+                    <div class="project__content">
+                        <h3 class="project__title">Sistema de Diseño</h3>
+                        <p class="project__description">
+                            Librería de componentes reutilizables con Storybook, tokens de diseño
+                            y documentación completa para equipos de desarrollo.
+                        </p>
+                        <div class="project__tech">
+                            <span class="tech__tag">React</span>
+                            <span class="tech__tag">Storybook</span>
+                            <span class="tech__tag">Styled Components</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link project__link--primary">Ver Demo</a>
+                            <a href="#" class="project__link project__link--secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3 -->
+                <article class="project__card">
+                    <div class="project__image">🤖 AI Assistant</div>
+                    <div class="project__content">
+                        <h3 class="project__title">Asistente IA</h3>
+                        <p class="project__description">
+                            Chat bot inteligente con procesamiento de lenguaje natural,
+                            integración de APIs y aprendizaje automático.
+                        </p>
+                        <div class="project__tech">
+                            <span class="tech__tag">Python</span>
+                            <span class="tech__tag">FastAPI</span>
+                            <span class="tech__tag">OpenAI</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link project__link--primary">Ver Demo</a>
+                            <a href="#" class="project__link project__link--secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto Destacado 2 -->
+                <article class="project__card project__card--featured">
+                    <div class="project__image">📱 Mobile App</div>
+                    <div class="project__content">
+                        <h3 class="project__title">App Móvil Cross-Platform</h3>
+                        <p class="project__description">
+                            Aplicación móvil con sincronización offline, notificaciones push,
+                            geolocalización y integración con servicios en la nube. Disponible
+                            en iOS y Android con una sola base de código.
+                        </p>
+                        <div class="project__tech">
+                            <span class="tech__tag">React Native</span>
+                            <span class="tech__tag">Expo</span>
+                            <span class="tech__tag">Firebase</span>
+                            <span class="tech__tag">Redux</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link project__link--primary">Ver Demo</a>
+                            <a href="#" class="project__link project__link--secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 5 -->
+                <article class="project__card">
+                    <div class="project__image">⚡ Real-time API</div>
+                    <div class="project__content">
+                        <h3 class="project__title">API en Tiempo Real</h3>
+                        <p class="project__description">
+                            API GraphQL con subscripciones en tiempo real, autenticación JWT
+                            y optimización de consultas complejas.
+                        </p>
+                        <div class="project__tech">
+                            <span class="tech__tag">Node.js</span>
+                            <span class="tech__tag">GraphQL</span>
+                            <span class="tech__tag">WebSockets</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link project__link--primary">Ver Demo</a>
+                            <a href="#" class="project__link project__link--secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 6 -->
+                <article class="project__card">
+                    <div class="project__image">🔐 Blockchain DApp</div>
+                    <div class="project__content">
+                        <h3 class="project__title">DApp Blockchain</h3>
+                        <p class="project__description">
+                            Aplicación descentralizada con smart contracts, wallet integration
+                            y transacciones en Ethereum.
+                        </p>
+                        <div class="project__tech">
+                            <span class="tech__tag">Solidity</span>
+                            <span class="tech__tag">Web3.js</span>
+                            <span class="tech__tag">Ethereum</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" class="project__link project__link--primary">Ver Demo</a>
+                            <a href="#" class="project__link project__link--secondary">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!-- Contact Section Glassmorphism -->
+        <section class="portfolio__contact" id="contact">
+            <div class="contact__content">
+                <h2 class="contact__title">¡Conectemos!</h2>
+                <p class="contact__description">
+                    ¿Tienes un proyecto ambicioso en mente? Me apasiona colaborar en ideas
+                    innovadoras que generen impacto real. ¡Hablemos y construyamos algo increíble juntos!
+                </p>
+
+                <div class="contact__links">
+                    <a href="mailto:juan@ejemplo.com" class="contact__link">
+                        <div class="contact__icon">📧</div>
+                        <span class="contact__text">Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/juan-perez" class="contact__link">
+                        <div class="contact__icon">💼</div>
+                        <span class="contact__text">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/juan-perez" class="contact__link">
+                        <div class="contact__icon">💻</div>
+                        <span class="contact__text">GitHub</span>
+                    </a>
+                    <a href="tel:+51987654321" class="contact__link">
+                        <div class="contact__icon">📱</div>
+                        <span class="contact__text">Teléfono</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
